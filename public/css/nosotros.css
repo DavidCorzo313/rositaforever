@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar estilo neón */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #00d4ff, #0077ff);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #00ffff, #0055aa);
+}
+
+/* Sección Nosotros */
+.nosotros-section {
+    padding: 5rem 0;
+    background: #0d0d0d;
+}
+.text-neon {
+    color: #00d4ff;
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+}
+.text-subtitle {
+    color: #aaa;
+}
+.icon-neon {
+    font-size: 1.8rem;
+    color: #00d4ff;
+    text-shadow: 0 0 6px rgba(0, 212, 255, 0.7);
+}
+.neon-border {
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.8);
+}
+.tag-desde {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #00d4ff;
+    color: black;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+    border-radius: 0 12px 12px 0;
+    font-size: 0.9rem;
+}
+
+/* Texto blanco con efecto neón */
+.descripcion-blanca {
+    color: #fff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+                 0 0 10px rgba(0, 212, 255, 0.6),
+                 0 0 20px rgba(0, 212, 255, 0.4);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Reseñas */
+.reseñas-section {
+    padding: 4rem 0;
+    background: #0a0a0a;
+}
+.reseña-card {
+    background: #111;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0 0 14px rgba(0, 212, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+.reseña-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+/* Texto */
+.text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nosotros-section {
+        padding: 3rem 1rem;
+    }
+}

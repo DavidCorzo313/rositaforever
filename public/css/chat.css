@@ -1,0 +1,136 @@
+/* Botón flotante para abrir el chat */
+#toggleChat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #004d61; /* Azul petróleo */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 77, 97, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#toggleChat:hover {
+  background-color: #007a99; /* Azul más claro al pasar el mouse */
+  transform: scale(1.05);
+}
+
+/* Contenedor principal del chat */
+#chat-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  max-height: 420px;
+  background-color: #f5f7fa; /* Fondo gris muy claro */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado del chat */
+#chat-header {
+  background-color: #004d61; /* Azul petróleo */
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+#closeChat {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #cce7ed; /* Azul claro para icono cerrar */
+  transition: color 0.3s ease;
+}
+
+#closeChat:hover {
+  color: #ffffff;
+}
+
+/* Área de mensajes */
+#chat-messages {
+  padding: 12px;
+  flex: 1;
+  overflow-y: auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mensajes */
+.message {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.bot {
+  background-color: #e9f3f5; /* Azul muy claro */
+  align-self: flex-start;
+  color: #00323d;
+  border: 1px solid #cce7ed;
+}
+
+.user {
+  background-color: #004d61; /* Azul petróleo usuario */
+  color: white;
+  align-self: flex-end;
+  text-align: right;
+  border: 1px solid #00323d;
+}
+
+/* Entrada de texto */
+#chat-input {
+  display: flex;
+  border-top: 1px solid #cce7ed;
+  background-color: #f0f4f7;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0 0 0 15px;
+  font-size: 0.9rem;
+  background: white;
+}
+
+#userInput:focus {
+  background-color: #f9fcfd;
+  box-shadow: inset 0 0 4px rgba(0, 77, 97, 0.15);
+}
+
+/* Botón enviar */
+#chat-input button {
+  background-color: #007a99; /* Azul más vivo */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 0 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#chat-input button:hover {
+  background-color: #005f73;
+}

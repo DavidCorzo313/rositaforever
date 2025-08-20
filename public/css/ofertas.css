@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.cdnfonts.com/css/self-deception');
+
+/* ======= Base ======= */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #293ab6; /* Fondo suave azulado */
+  margin: 0;
+  padding: 0;
+}
+
+/* ======= Scrollbar ======= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #2c3e8f99, #2c3e8f99);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2c3e8fcc, #2c3e8fcc);
+}
+
+/* ======= Títulos ======= */
+.titulo-confiteria {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #2c3e8f;
+  background-color: #a1b2e830;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+/* ======= Tarjetas de Producto ======= */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(44, 62, 143, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(44, 62, 143, 0.2);
+}
+
+.product-card h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #152e9e;
+}
+
+.product-card img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* ======= Footer ======= */
+.footer-confiteria {
+  background: linear-gradient(to right, #2c3e8f99, #092449); /* Azul translúcido a profundo */
+  border-top: 2px solid #1a2b66; /* Azul oscuro */
+  color: #7164e2;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  padding: 1.5rem 0;
+}
+
+.footer-confiteria .brand-name {
+  color: #d3e0ff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-confiteria .footer-desc {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  color: #d3e0ff;
+}
+
+.footer-confiteria .social-icon {
+  color: #a3b5e2;
+  font-size: 1.3rem;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-confiteria .social-icon:hover {
+  color: #2c3e8f;
+}
+
+.footer-confiteria i {
+  color: #1a49be;
+}
+
+.footer-confiteria hr {
+  border: none;
+  border-top: 1px solid #182acf;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+/* ======= Responsive Footer ======= */
+@media (max-width: 576px) {
+  .footer-confiteria .brand-name {
+    font-size: 1rem;
+  }
+  .footer-confiteria .social-icon {
+    font-size: 1.1rem;
+  }
+}

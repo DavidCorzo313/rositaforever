@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h2, h3, h4 {
+  color: #333;
+}
+
+/* Imágenes dentro de tablas */
+.table img {
+  border-radius: 8px;
+  max-width: 100px;
+  object-fit: cover;
+}
+
+/* Botones principales azules */
+.btn-primary {
+  background-color: #1a73e8; /* azul */
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  color: white !important; /* texto blanco garantizado */
+}
+
+.btn-primary:hover {
+  background-color: #155ab6;
+  color: white !important;
+}
+
+/* Botón peligro (eliminar) redondo con azul oscuro */
+.btn-danger {
+  background-color: #155ab6;
+  border-radius: 50%;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  color: white !important; /* texto blanco garantizado */
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #0f447f;
+  color: white !important;
+}
+
+/* Enlaces */
+a, a:visited {
+  color: #e8eaec;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f3f5f8;
+  text-decoration: underline;
+}
+
+/* Tarjetas con sombra suave azulada */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(26, 115, 232, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(26, 115, 232, 0.35);
+  transform: scale(1.03);
+}
+
+/* Scrollbar personalizada azul */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #1a73e8cc, #155ab6cc);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #155ab6dd, #0f447fdd);
+}

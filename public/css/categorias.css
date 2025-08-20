@@ -1,0 +1,91 @@
+/* Tarjetas con efecto glow y degradado */
+.categoria-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 2px solid #00cfff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  background: linear-gradient(145deg, #ffffff 0%, #f0f8ff 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+.categoria-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 0 0 50px rgba(0, 195, 255, 0.4);
+  background: linear-gradient(145deg, #e0f7ff 0%, #d0f0ff 100%);
+}
+
+/* Fondo detrás de la imagen con glow */
+.card-img-container {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 195, 255, 0.1));
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  transition: background 0.3s ease;
+}
+.categoria-card:hover .card-img-container {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(0, 195, 255, 0.2));
+}
+
+/* Imagen del producto */
+.card-img-top {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.categoria-card:hover .card-img-top {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* Contenido de la tarjeta */
+.card-body {
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+}
+.card-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #007bff;
+  text-shadow: 0 0 5px rgba(0, 195, 255, 0.5);
+}
+
+/* Botón de categoría con glow y animación */
+.btn-categoria {
+  background-color: #00cfff !important;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.35);
+}
+.btn-categoria:hover {
+  background-color: #009dff !important;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Efecto overlay brillante al pasar el mouse */
+.categoria-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.05);
+  transform: rotate(45deg);
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.categoria-card:hover::before {
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+}

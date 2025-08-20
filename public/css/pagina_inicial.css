@@ -1,0 +1,173 @@
+/* Fuentes y reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f5f7, #e0e0e5);
+  color: #2e2e3e;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  padding-top: 100px; /* ✅ Si navbar es fixed, separa contenido */
+}
+
+/* Carrusel */
+.carousel {
+  margin-top: 40px; /* ✅ Espacio suficiente debajo del navbar */
+  position: relative;
+  z-index: 0;
+}
+
+.carousel-inner img {
+  max-height: 380px;
+  object-fit: scale-down;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 115, 255, 0.25); /* 🔵 azul neón */
+  transition: transform 0.3s ease;
+  filter: brightness(1.08) contrast(1.05);
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.015);
+}
+
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  padding: 1.3rem;
+  text-align: center;
+  max-width: 90%;
+  margin: 1rem auto 0;
+  box-shadow: 0 6px 18px rgba(0, 115, 255, 0.12);
+}
+
+.carousel-caption h5 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #0056b3;
+  text-shadow: 0 0 4px rgba(0, 115, 255, 0.25);
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Controles carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 115, 255, 0.5);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #007bff;
+}
+
+/* Sección título */
+.container h2 {
+  font-weight: 800;
+  color: #0056b3;
+  margin-bottom: 30px;
+  text-shadow: 0 0 4px rgba(0, 115, 255, 0.25);
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 15px;
+  border: 1.5px solid #3399ff;
+  box-shadow: 0 10px 22px rgba(0, 115, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 32px rgba(0, 115, 255, 0.3);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+/* Botón Ver Más azul neón */
+.btn-categoria {
+  background-color: #007bff !important;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 14px rgba(0, 115, 255, 0.4);
+}
+
+.btn-categoria:hover {
+  background-color: #0056b3 !important;
+  transform: scale(1.08);
+  box-shadow: 0 7px 20px rgba(0, 115, 255, 0.55);
+}
+
+/* Alertas */
+.alert-warning {
+  background-color: #eef6ff;
+  color: #004085;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1.5px solid #b8daff;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 115, 255, 0.12);
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    max-height: 280px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.4rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.95rem;
+  }
+
+  .btn-categoria {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner img {
+    max-height: 200px;
+  }
+
+  .carousel-caption {
+    padding: 1rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}

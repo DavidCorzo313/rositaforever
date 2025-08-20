@@ -1,0 +1,101 @@
+/* Fondo principal oscuro */
+body {
+    background-color: #0c0c0c;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+/* Tarjetas con estilo moderno */
+.card {
+    background-color: #1c1c1c;
+    border-radius: 16px;
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* Encabezados llamativos */
+.card-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #00ffff;
+}
+
+/* Títulos */
+h1, h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00ffff;
+}
+
+/* Botones */
+.btn-primary, .btn-success, .btn-danger {
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+}
+
+.btn-primary {
+    background-color: #00cfff;
+    border-color: #00cfff;
+}
+
+.btn-success {
+    background-color: #00d49a;
+    border-color: #00d49a;
+}
+
+.btn-danger {
+    background-color: #ff4c61;
+    border-color: #ff4c61;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Tabla oscura */
+.table {
+    background-color: #111;
+    color: #fff;
+}
+
+.table th, .table td {
+    border-color: #333;
+}
+
+.table thead {
+    background-color: #00ffff;
+    color: #000;
+}
+
+/* Alertas redondeadas */
+.alert {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* 🔥 Correcciones para campos de formularios */
+.form-label,
+.form-control,
+.form-select,
+textarea {
+  color: #ffffff !important;
+  background-color: #1e1e1e !important;
+  border-color: #444 !important;
+}
+
+/* Placeholder blanco */
+::placeholder {
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+/* Al enfocar */
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  border-color: #0dcaf0 !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.25) !important;
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}

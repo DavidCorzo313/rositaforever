@@ -1,0 +1,13 @@
+body {
+  background-color: #f8f9fa; /* Fondo claro neutro */
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #2c3e8f; /* Azul oscuro consistente con títulos */
+}
+
+form label {
+  font-weight: 500;
+  color: #344d99; /* Azul medio para etiquetas */
+}

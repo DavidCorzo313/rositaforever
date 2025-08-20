@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+@import url("https://fonts.cdnfonts.com/css/self-deception");
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #e3e6f7; /* Fondo azul muy suave */
+}
+
+/* Estilos de las tarjetas */
+.card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+    background: #fff; /* Fondo blanco para contraste */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e8f; /* Azul oscuro para títulos */
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #28a745; /* Verde que mantienes para precios */
+    font-weight: bold;
+}
+
+.stock {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.reviews {
+    font-size: 0.9rem;
+    color: #ff9800;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #4a69bd; /* Azul medio */
+    border: none;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.boton {
+    text-decoration: none; /* Eliminar el "solid black" que no es válido */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #344d99; /* Azul oscuro en hover */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #4a69bd, #344d99);
+    border-radius: 3px;
+}
